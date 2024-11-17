@@ -16,11 +16,11 @@ public class GoogleDemo {
 		String expec="Google";
 		if(actualtitle.equalsIgnoreCase(expec))
 		{
-			System.out.println("Pass");
+			System.out.println("fail");
 		}
 		else
 		{
-			System.out.println("fail");
+			System.out.println("pass");
 			
 		}
 		//driver.close();//close current window

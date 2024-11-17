@@ -10,9 +10,9 @@ public class PageSource {
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.google.com/");
 	
-		String getpagsrc=driver.getPageSource();
+		String actualpagsrc=driver.getPageSource();
 		String mail="Gmail";
-		if(getpagsrc.contains("mail"))
+		if(actualpagsrc.contains("mail"))
 		{
 			System.out.println("pass");
 		}
@@ -35,4 +35,4 @@ public class PageSource {
 //		{
 //			System.out.println("images fail");
 //		}}
-}
+	}
