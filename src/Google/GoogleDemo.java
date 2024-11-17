@@ -1,5 +1,5 @@
 //Load google page
-
+//Title verify
 package Google;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,10 +11,19 @@ public class GoogleDemo {
 		
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.google.com/");
-		driver.close();//close current window
+		
+		String actualtitle=driver.getTitle();
+		String expec="Google";
+		if(actualtitle.equalsIgnoreCase(expec))
+		{
+			System.out.println("Pass");
+		}
+		else
+		{
+			System.out.println("fail");
+			
+		}
+		//driver.close();//close current window
 		//driver.quit();//entire browser
-		
-		
 	}
-
 }
