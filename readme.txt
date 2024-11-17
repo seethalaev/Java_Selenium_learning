@@ -12,3 +12,7 @@ Project name
 	----- JRE SYSTEM library
 	----- Referenced Library
 		----- selenium driver files
+	-----Junit5
+	
+Adding junit to java project
+project->buildpath->configure buildpath->libraries->add library->junit-next->apply and close
