@@ -16,3 +16,6 @@ Project name
 	
 Adding junit to java project
 project->buildpath->configure buildpath->libraries->add library->junit-next->apply and close
+
+Download chropath
+down chropath->add to chrome->add extension
