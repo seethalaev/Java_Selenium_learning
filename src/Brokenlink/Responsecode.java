@@ -1,3 +1,4 @@
+//load google,check responsecode is succeccfull
 package Brokenlink;
 
 import java.net.HttpURLConnection;
@@ -27,7 +28,7 @@ public class Responsecode
 		  int responsecode=con.getResponseCode();
 		  
 		  System.out.println(responsecode);
-		  con.connect();
+		  con.connect();                         //mansilayilla
 		  if(con.getResponseCode()==200)
 		  {
 			  System.out.println("valid");
