@@ -16,9 +16,9 @@ public class Amazonassinmnt
 	  driver.get("https://www.amazon.in/");
   }
   @org.junit.Test
-  public void Giftideas()
+  public void Mobiles()
   {
-	  driver.manage().window().maximize();
+	  //driver.manage().window().maximize();
 	 //driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("mobiles",Keys.ENTER);
 	 //driver.findElement(By.xpath("//span id[@id=\"nav-cart-count']")).click();
 	  driver.findElement(By.xpath("//*[@id='nav-xshop']/a[6]")).click();

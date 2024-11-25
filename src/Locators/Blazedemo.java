@@ -1,3 +1,4 @@
+//load blazedemo,value pass in each field
 package Locators;
 
 import org.junit.Test;
@@ -23,5 +24,4 @@ public class Blazedemo
 		driver.findElement(By.id("password")).sendKeys("122aas",Keys.ENTER);
 		driver.findElement(By.id("password-confirm")).sendKeys("122aas",Keys.ENTER);
 	}
-
 }

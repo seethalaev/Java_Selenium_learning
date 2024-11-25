@@ -1,3 +1,4 @@
+//Junit structure
 package Juniit;
 
 import org.junit.After;

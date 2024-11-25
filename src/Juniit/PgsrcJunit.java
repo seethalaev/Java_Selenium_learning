@@ -1,3 +1,4 @@
+//Load google,get title ,check mail included-all in Junit structure
 package Juniit;
 import org.junit.Test;
 import org.junit.Before;
