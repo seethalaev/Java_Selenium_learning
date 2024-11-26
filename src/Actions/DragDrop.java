@@ -1,3 +1,4 @@
+//drag and drop using actionclass
 package Actions;
 
 import org.openqa.selenium.By;
@@ -27,7 +28,7 @@ public class DragDrop
 	{
 		WebElement drag = driver.findElement(By.xpath("//*[@id=\"draggable\"]"));
 		WebElement drop = driver.findElement(By.xpath("//*[@id=\"droppable\"]"));
-		
+		driver.manage().window().maximize();
 		Actions act=new Actions(driver);
 		act.dragAndDrop(drag, drop);
 		act.perform();
