@@ -1,3 +1,4 @@
+//basic strucutre of testng
 package TstNg;
 
 import org.testng.annotations.AfterMethod;
