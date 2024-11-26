@@ -1,3 +1,4 @@
+
 package Grouping;
 
 
@@ -10,23 +11,23 @@ import org.testng.annotations.Parameters;
 
 public class Crossbrowser 
 {
-		WebDriver driver;
-		@Parameters("browser")
-		@BeforeTest
-		public void crossbr(String browser)
+	WebDriver driver;
+	@Parameters("browser")
+	@BeforeTest
+	public void crossbr(String browser)
+	{ if(browser.equalsIgnoreCase("firefox"))
+	{
+		driver=new FirefoxDriver();
+	}
+	  
+	   else if(browser.equalsIgnoreCase("chrome"))
 		{
-		   if(browser.equalsIgnoreCase("firefox"))
-			{
-				driver=new FirefoxDriver();
-			}
-		   else if(browser.equalsIgnoreCase("chrome"))
-			{
-				driver=new ChromeDriver();
-			}
-			else if(browser.equalsIgnoreCase("edge"))
-			{
-				driver=new EdgeDriver();
-			}
+			driver=new ChromeDriver();
+		}
+		else if(browser.equalsIgnoreCase("edge"))
+		{
+			driver=new EdgeDriver();
+		}
 		}
 		@org.testng.annotations.Test
 		public void fb()
