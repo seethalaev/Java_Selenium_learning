@@ -1,5 +1,7 @@
 package Fileupload;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +17,7 @@ public class SendKey
 	public void beforemethod()
 	{
 		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	@BeforeMethod
 	public void urlloading()
@@ -24,7 +27,7 @@ public class SendKey
 	@Test
 	public void test()
 	{
-		driver.findElement(By.xpath("//*[@id=\"uploadfile_0\"]")).sendKeys("\"D:\\resumes\\SEETHALA's Resume.pdf\"");
+		driver.findElement(By.xpath("//*[@id=\"uploadfile_0\"]")).sendKeys("C:\\Users\\user\\Desktop\\html.txt");
 		driver.findElement(By.xpath("//*[@id=\"submitbutton\"]")).click();
 		
 	}
